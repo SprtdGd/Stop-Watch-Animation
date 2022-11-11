@@ -1,0 +1,187 @@
+
+body {
+    background: #151845;
+    color: white;
+    font-family: sans-serif;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+  /* stopwatch */
+
+  .stopwatchNew {
+    height: 200px;
+    width: 200px;
+    border: 18px solid #fafcf7;
+    position: absolute;
+    top: 200px;
+    margin: auto;
+    left: 0;
+    right: 0;
+    border-radius: 50%;
+  }
+
+  .button1 {
+    background-color: #fafcf7;
+    height: 12px;
+    width: 28px;
+    position: absolute;
+    left: 85px;
+    top:-45px;
+  }
+
+  .button1::before {
+    content: "";
+    position: absolute;
+    height: 24px;
+    width: 50px;
+    background-color: #fafcf7;
+    bottom: 12px;
+    left: -11px;
+  }
+
+  .button2 {
+    background-color: #fafcf7;
+    height: 18px;
+    width: 28px;
+    position: absolute;
+    left: 196px;
+    bottom: 186px;
+    transform: rotate(45deg);
+  }
+
+
+  .time {
+    background-color: #fafcf7;
+    height: 85px;
+    width: 85px;
+    border-radius: 0 170px 0 0;
+    position: absolute;
+    opacity: 0;
+  }
+ 
+  .t1 {
+    right: 15px;
+    top: 15px;
+    animation: time1 10s infinite;
+    /* animation-play-state: paused; */
+  }
+  @keyframes time1{
+    0%{
+        opacity: 0;
+    }
+    5%{
+        opacity: .20;
+    }
+    10%{
+        opacity: .40;
+    }
+    15%{
+        opacity: .60;
+    }
+    20%{
+        opacity: .80;
+    }
+    25%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+  .t2 {
+    right: 15px;
+    bottom: 15px;
+    transform: rotate(90deg);
+    animation: time2 10s infinite;
+    /* animation-play-state: paused; */
+  }
+  @keyframes time2{
+    25%{
+        opacity: 0;
+    }
+    30%{
+        opacity:.20;
+    }
+    35%{
+        opacity: .40;
+    }
+    40%{
+        opacity: .80;
+    }
+    45%{
+        opacity: .80;
+    }
+    
+    50%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+  .t3 {
+    left: 15px;
+    bottom: 15px;
+    transform: rotate(180deg);
+    animation: time3 10s infinite;
+    /* animation-play-state: paused; */
+  }
+  @keyframes time3{
+    50%{
+        opacity: 0;
+    }
+    55%{
+        opacity: .20;
+    }
+    60%{
+        opacity: .40;
+    }
+    65%{
+        opacity: .60;
+    }
+    70%{
+        opacity: .80;
+    }
+    75%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+  .t4 {
+    left: 15px;
+    top: 15px;
+    transform: rotate(270deg);
+    animation: time4 10s infinite;
+    /* animation-play-state: paused; */
+  }
+  @keyframes time4{
+    75%{
+        opacity: 0;
+    }
+    80%{
+        opacity: .20;
+    }
+    85%{
+        opacity: .40;
+    }
+    90%{
+        opacity: .60;
+    }
+    95%{
+        opacity: .80;
+    }
+    100%{
+        opacity: 1;
+    }
+} 
